@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+    <!--Meu CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Ricky and Morty</title>
+</head>
+<body>
+    <header>
+        <!-- As a link -->
+        <nav class="navbar bg-white">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="./assets/img/RICK_MORTY_ICON-01.svg" width="40" height="40">
+            </a>
+            </div>            
+        </nav>
+        <section class="container busca py-5">
+            <div class="row justify-content-center g-4">            
+                <div class="col-12 text-center">
+                    <h1 class="titulo display-1 fw-bolder">API do Ricky e Morty</h1>
+                </div> 
+                <div class="col-12 col-md-10 col-xl-8">                   
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Busque seu personagem" aria-label="Busca personagem" aria-describedby="icon-search">
+                        
+                        <span class="input-group-text" id="icon-search">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+    </header>
+    <main class="container_principal">
+        <section class="container">
+            <div class="cards_container row g-4 px-1" id="list-characters">
+                <!--Lista de personagens pelo JS-->
+            </div>    
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>    
+    <!--JS BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <!--AXIOS JS-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/index.js" ></script>
+</body>
+</html>
