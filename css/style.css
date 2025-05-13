@@ -19,6 +19,7 @@
    border-right: none; 
 }
 
+
 .input-group-text {
     display: flex;
     align-items: center;
@@ -37,6 +38,13 @@
 
 .container_principal {
     background-image: url('/assets/img/FUNDO.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: #002c09;
+    padding-bottom: 900px;
+    padding-top: 40px;  
+   
 }
 
 .card-title {
@@ -50,14 +58,33 @@
 }
 
 .card {
-    width: 250px;
-    
+    max-width: 500px;
+    width: 100%;
+    margin: auto;   
 }
 
 .cards_container {
-    margin: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 30px 0;
+    gap: 20px;
 }
 
+.card-character {
+    background-color: #314237;
+    color: white;
+}
+
+.modal-content {
+    background-color: #314237;
+    color: white;
+}
+
+footer {
+    background-color: #031a07;
+    color: rgb(97, 96, 96);
+    font-weight: bold;
+}
 
