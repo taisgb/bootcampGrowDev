@@ -97,6 +97,13 @@ function mapGender(gender) {
     return genderMap[gender] || gender;
 }
 
+function traduzirLocalizacao(texto) {
+  return texto
+    .replace("Earth", "Terra")
+    .replace("earth", "Terra")
+    .replace("unknown", "Desconhecido");
+}
+
 function renderCharactersList(characters) {
   const row = document.getElementById("list-characters");
   row.innerHTML = "";
@@ -129,7 +136,7 @@ function renderCharactersList(characters) {
               </p>
               <p class="card-text">
                 <small class="text-secondary">Última localização conhecida:</small><br>
-                <small>${character.location.name}</small>
+                <small>${traduzirLocalizacao(character.location.name)}</small>
               </p>
               <p class="card-text">
                 <small class="text-secondary">Visto a última vez em:</small><br>
@@ -148,6 +155,9 @@ function renderCharactersList(characters) {
   }
 }
 
+
+
+
 async function openCharacterModal(characterId) {
   const character = await getCharacterById(characterId);
   const lastEpisodeUrl = character.episode[character.episode.length - 1];
@@ -163,8 +173,8 @@ async function openCharacterModal(characterId) {
         <p><strong>Status:</strong> ${mapStatus(character.status).text}</p>
         <p><strong>Espécie:</strong> ${mapSpecie(character.species)}</p>
         <p><strong>Gênero:</strong> ${mapGender(character.gender)}</p>
-        <p><strong>Origem:</strong> ${character.origin.name}</p>
-        <p><strong>Última localização:</strong> ${character.location.name}</p>
+        <p><strong>Origem:</strong> ${traduzirLocalizacao(character.origin.name)}</p>
+        <p><strong>Última localização:</strong> ${traduzirLocalizacao(character.location.name)}</p>
         <p><strong>Último episódio:</strong> ${episodeName}</p>
       </div>
     </div>
