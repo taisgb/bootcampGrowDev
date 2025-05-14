@@ -53,7 +53,7 @@
 }
 
 .container_principal {
-    background-image: url('./assets/img/FUNDO.jpg');
+    background-image: url('/assets/img/FUNDO.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
