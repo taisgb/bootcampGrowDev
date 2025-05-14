@@ -2,6 +2,22 @@
     --primary-color: #074f14;
 }
 
+#logo_animada {
+  animation: girar 4s linear infinite;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+}
+}
+
 .titulo {
     color: var(--primary-color);
 }
@@ -48,7 +64,7 @@
 }
 
 .card-title {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 #circle_status {
