@@ -115,7 +115,7 @@ function renderCharactersList(characters) {
     }
 
     const card = `
-      <div class="card mb-3 card-character" 
+      <div class="shadow-drop-2-tl card mb-3 card-character" 
         onclick="openCharacterModal(${character.id})" 
         data-bs-toggle="modal" 
         data-bs-target="#characterModal">
